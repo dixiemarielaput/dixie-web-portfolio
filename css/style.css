@@ -12,11 +12,13 @@ header{
     list-style-type: none;
 }
 
-header h1{
-    color:white;
-    font-size: 22px;
-    margin:20px 10px 20px 5px;
+.logo-container{
+    margin:5px 10px 20px 10px;
     padding: 20px 20px;
+}
+
+.logo-container img{
+    width:10%;   
 }
 nav{
     margin-left:30px;
@@ -92,12 +94,13 @@ margin-bottom:18%;
 
 .text-container button{
     margin-top: 25px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-color: white;
     border-radius: 2px;
     padding: 15px 25px;
     background-color: black;
     color:white;
+    cursor:pointer;
 }
 
 .text-container span{
@@ -105,4 +108,23 @@ margin-bottom:18%;
     font-weight: 500;
     font-size: 4.1rem;
     text-overflow: clip;
+}
+
+.hero-container span{
+    font-weight: 600;
+}
+
+footer{
+ 
+    height: 40px;
+    background:white;
+  
+}
+
+footer p{
+    padding:10px 10px;
+    margin: 5px 5px 5px auto;
+    text-align: center;
+    color:black;
+    font-size: 13px;
 }
