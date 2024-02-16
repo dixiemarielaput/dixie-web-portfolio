@@ -24,7 +24,7 @@
     <main>
         <section>
             <div class="contact-container">
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false; ">
                     <h3>GET IT TOUCH</h3>
                     <input type="text" placeholder="name" required id="name">
                     <input type="email" placeholder="Email id" required id="email">
@@ -39,6 +39,23 @@
 <footer>
     <p>Copyright &copy; Dixie L. </p>
 </footer>
+
+<script> src="https://smtpjs.com/v3/smtp.js"</script>
+<script>
+    function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "dixiemarielaput@gmail.com",
+    Password : "Gazzette12much!",
+    To : 'dixiemarielaput1@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
     
 </body>
 </html>
